@@ -1,0 +1,16 @@
+.center-content {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  color: red;
+}
+
+.paragraph-container {
+  padding: 2em;
+}
+
+.button-container {
+  margin-top: 1em;
+}

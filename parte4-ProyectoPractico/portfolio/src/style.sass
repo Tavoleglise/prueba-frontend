@@ -1,0 +1,88 @@
+:root
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif
+  line-height: 1.5
+  font-weight: 400
+
+  color: rgba(255, 255, 255, 0.87)
+  background-color: #242424
+
+body
+  margin: 0
+  display: flex
+  place-items: center
+  min-width: 320px
+  min-height: 100vh
+
+#app
+  max-width: 1280px
+  margin: 0 auto
+  padding: 2rem
+  text-align: center
+.download-button
+  a
+    text-decoration: none
+    color: inherit
+    background-color: #f50057
+    padding: 0.5rem 1rem
+    border-radius: 5px
+    font-size: 1.2em
+    transition: background-color 0.3s
+    &:hover
+      background-color: #ff4081
+
+.introduction
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  &__title
+    font-size: 2.5em
+    margin-bottom: 1rem
+  &__subtitle
+    font-size: 1.5em
+    margin-bottom: 2rem
+  &__description
+    font-size: 1.2em
+    margin-bottom: 2rem
+    color: #a0a0a0
+    width: 80%
+
+.section
+  margin-bottom: 4rem
+  .title
+    font-size: 1.5em
+    margin-bottom: 1rem
+  .container
+    display: flex
+    justify-content: center
+    .container-piece
+      margin: 1rem
+      transition: transform 0.3s
+      &:hover
+        transform: scale(1.1)
+      a
+        text-decoration: none
+        color: inherit
+      img
+        border-radius: 50%
+        height: 150px
+
+@media screen and (max-width: 768px)
+  .introduction
+    &__title
+      font-size: 3.5em
+    &__subtitle
+      font-size: 2.5em
+    &__description
+      width: 100%
+      font-size: 1.5em
+
+  .section
+    .title
+      font-size: 2.5em
+    .container
+      flex-direction: column
+
+      .container-piece
+        margin: 1rem 0
+        width: 100%
